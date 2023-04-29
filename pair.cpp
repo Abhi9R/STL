@@ -6,6 +6,12 @@ using namespace std;
 #define int long long
 #define endl "\n"
 
+void print(int* a, int n) {
+    for(int i=0;i<n;i++) {
+        cout << a[i] << " ";
+    } cout << endl;
+}
+
 int32_t main() {
     int n;
     cin >> n;
@@ -24,8 +30,6 @@ int32_t main() {
         i++;
     }
 
-    for(int i=0;i<n;i++) {
-        cout << b[i] << " ";
-    } cout << endl;
+    print(b, n);
     return 0;
 }
